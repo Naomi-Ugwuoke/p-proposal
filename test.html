@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+        <title>Adding 2 values</title>
+        <!-- <script language="javascript">
+                function addNumbers()
+                {
+                        var val1 = parseInt(document.getElementById("entry1").value);
+                        var val2 = parseInt(document.getElementById("entry2").value);
+                        var val3 = parseInt(document.getElementById("entry3").value);
+                        var answer = document.getElementById("answer");
+                        answer.value = val1 + val2 + val3;
+                }
+        </script> -->
+  </head>
+  <body>
+        <!-- entry1 = <input type="text" id="entry1" name="entry1" value=""/>
+        entry2 = <input type="text" id="entry2" name="entry2" value="2"/>
+        entry3 = <input type="text" id="entry3" name="entry3" value="7"/>
+        <input type="button" name="SUBMIT" value="CLICK TO CONFIRM" onclick="javascript:addNumbers()"/>
+        Answer = <input type="text" id="answer" name="answer" value=""/> -->
+
+        <script language="javascript">
+                            function addNumbers()
+                            {
+                                var eff = parseInt(document.getElementById("eff").value);
+                                var apa = parseInt(document.getElementById("apa").value);
+                                var wl = parseInt(document.getElementById("wl").value);
+                                var over = parseInt(document.getElementById("pver").value);
+                                var total = document.getElementById("total");
+                                
+                                total.value = eff + apa + wl + over;
+                            }
+                        </script>
+                        
+                        <p class="w3-padding-16">Effort: <input type="text" id="eff" name="eff" value="" class="w3-input"></p>
+                        <p class="w3-padding-16">APA/ Research: <input type="text" id="apa" name="apa" value="" class="w3-input"></p>
+                        <p class="w3-padding-16">Website Look: <input type="text" id="wl" name="wl" value="" class="w3-input"></p>
+                        <p class="w3-padding-16">Overall: <input type="text" id="over" name="over" value="" class="w3-input"></p>
+                        
+                        
+                        
+
+    
+                        <!-- Submit button -->
+                        
+                        <p>
+                            <input class= "w3-button w3-light-grey w3-section" type='button' value="Submit" onclick="javascript:addNumbers()">
+                            <hr>
+                            Total = <input class="w3-input" type="text" id="total" name="total" value=""/>
+                        </p>
+
+  </body>
+</html>

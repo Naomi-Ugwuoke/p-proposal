@@ -1,0 +1,176 @@
+<!-- page for marking matrix -->
+<!DOCTYPE html>
+<html>
+<title>Information Entry Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-- fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {
+    font-family: "Open Sans"
+    }
+</style>
+<body class="w3-light-grey">
+
+
+
+
+    
+
+    
+    <div class="w3-bar w3-black w3-hide-small">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="matrix.html" class="w3-bar-item w3-button">Information</a>
+        <a href="table.php" class="w3-bar-item w3-button">More</a>
+
+    </div>
+
+    <div class="w3-content" style="max-width:1600px">
+
+        <!-- Header -->
+        <header class="w3-container w3-center w3-padding-48 w3-white">
+            <h1 class="w3-xxxlarge"><b>Information Entry</b></h1>
+            
+        </header>
+
+        <header class="w3-display-container w3-wide" id="home">
+            <img class="w3-image" src="images/matrix-banner.jpg" alt="HEADER PHOTO SHOWING A HYBRID CAR" width="1600" height="20">
+            <div class="w3-display-left w3-padding-large">
+                <h1 class="w3-text-white">On this page, you will be able to fill in some forms.</h1>
+                <h5 class="w3-text-white">Have fun :)</h5>
+            </div>
+        </header>
+
+        <div class="w3-row w3-padding w3-border">
+
+
+            <div class="w3-container w3-white w3-margin w3-padding-large">
+                <div class="w3-center">
+                    <h2>Information Entry</h2>
+                    <!-- Last modified -->
+                    <h5>Last Modified
+                        <span class="w3-opacity">
+                            <script>
+                                document.write(document.lastModified);
+                            </script> 
+                        </span>
+                    </h5>
+                    
+                </div>
+                <hr>
+
+
+                <!-- Number of days Prompt -->
+                <div class="w3-center">
+                    <h4>
+                       <script>
+                            var days;
+                            days = prompt("How many days do we have to complete the final project?");
+                            document.write("You have given us "+ days + " days to complete the final project."); 
+                            if (days < 21)
+                                {
+                                    document.write("<p>No Chaacha, Not long enough</p>");
+                                }
+                            
+                            
+                            else
+                                {
+                                    document.write("<p>Yes Chaacha, that is fair</p>");
+                                }
+                        </script> 
+                    </h4>
+                    
+
+                </div>
+                <hr>
+
+
+                
+
+
+
+
+                <!-- Marking Matrix -->
+
+                <script language="javascript">
+                    function addNumbers()
+                    {
+                        var val1 = parseInt(document.getElementById("entry1").value);
+                        var val2 = parseInt(document.getElementById("entry2").value);
+                        var val3 = parseInt(document.getElementById("entry3").value);
+                        var val4 = parseInt(document.getElementById("entry4").value)
+                        var answer = document.getElementById("answer");
+                        answer.value = val1 + val2 + val3 +val4;
+                    }
+                </script>
+
+                <div class="w3-justify w3-large">
+                    <h2>
+                        <p><strong>The form below is about marking matrix that you plan to use for the final exam:</strong> </p>
+                    </h2>
+
+                    <form class="w3-hoverable w3-white w3-large">
+                        <h2>Assign a score fot each criteria below:</h2>
+                        
+                        <p>Effort = <input class="w3-padding-16 w3-input" type="text" id="entry1" name="entry1" value=""/> </p>
+                        <p>APA/ Research = <input class="w3-padding-16 w3-input" type="text" id="entry2" name="entry2" value=""/></p>
+                        <p>Website Look = <input class="w3-padding-16 w3-input" type="text" id="entry3" name="entry3" value=""/></p>
+                        <p>Overall = <input class="w3-padding-16 w3-input" type="text" id="entry4" name="entry4" value=""/></p>
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+                        
+
+    
+                        <!-- Submit button -->
+                        
+                        <p>
+                            <input class= "w3-button w3-light-grey w3-section" type="button" name="SUBMIT" value="CLICK TO CONFIRM" onclick="javascript:addNumbers()"/>
+                            <br>
+                            <br>
+                            Total = <input class="w3-input" type="text" id="answer" name="answer" value=""/>
+                        </p>
+
+                    </form>
+                    
+                    
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-dark-grey" style="padding:32px">
+        <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>Top</a>
+        <p>Name: Ugwuoke Naomi</p>
+        <p>Student ID: 300177027</p>
+    </footer>
+
+
+
+
+
+</body>
+</html>
